@@ -14,7 +14,7 @@
         android:background="#fff"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/weichat"
+        android:src="@drawable/wechat"
         android:scaleType="fitCenter"
         android:layout_weight="1"/>
     <View
