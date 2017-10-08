@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/imagelook_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/selectimage_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#60000000"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <ImageView
+                android:id="@+id/imagelook_bac"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_arrow_back_white_36dp" />
+
+            <TextView
+                android:id="@+id/selectimage_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="1/10"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imagelook_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingRight="20dp"
+                android:src="@drawable/imgsel_icon_unselected" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/imagelook_name"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:background="#60000000"
+        android:text="这是图片的名字"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+</RelativeLayout>
